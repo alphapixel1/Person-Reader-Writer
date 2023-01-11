@@ -48,7 +48,7 @@ public class PersonReader {
             l = reader.readLine();
         }
         ConsoleTable.PrintTable("PEOPLE",
-                Arrays.asList("ID","FIRST NAME","LAST NAME","TITLE","YEAR OF BIRTH"),
+                Arrays.asList("ID#","FIRST NAME","LAST NAME","TITLE","YEAR OF BIRTH"),
                 people.stream().map(Person::toList).collect(Collectors.toList())
         );
     }
